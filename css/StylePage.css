@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.html, body {
+    height: 100%;
+    min-height: 100%;
+    font-size: 16px;
+}
+.overlay {
+    background: center no-repeat url("../images/random-letters-seamless-pattern-abstract-600w-380229577.png");
+    background-size: cover;
+    filter: blur(4px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgb(236, 240, 241);
+    border-radius: 20px;
+    border: 1px solid rgb(221, 225, 226);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+    height: 53%;
+    transition: all ease .3s;
+}
+
+.box-body {
+    position: relative;
+    height: 100%;
+}
+
+.box-title {
+    text-align: center;
+    padding: 10px;
+    color: rgb(41,41,41);
+}
+
+.form-control {
+    display: flex;
+    background-color: #fff;
+    transition: all ease .2s;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 4px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.input,
+.input-addon {
+    background-color: transparent;
+    border: 0 none;
+    outline: 0 none;
+    padding: 3px 8px;
+    margin: 0;
+    transition: all ease .2s;
+    color: #666;
+}
+
+.input-addon {
+    border-right: 1px solid transparent;
+    flex: 0 0 1%;
+}
+
+.input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+.app {
+    padding: 20px;
+}
+
+.form-control:hover {
+    border-color: rgb(164,168,169);
+}
+
+.form-control:hover .input-addon, .form-control:focus-within .input-addon {
+    background-color: rgb(221,224,225);
+    border-right-color: rgb(164,168,169);
+}
+
+.form-control:focus-within .input-addon,
+.form-control:focus-within {
+    border-color: rgb(22, 142, 223);
+}
+
+.response:empty {
+    visibility: hidden;
+}
+
+.box:focus-within {
+    border:4px solid rgb(22, 142, 223);
+}
+
+.response  {
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #20ad6b;
+    background-color: #d1e7dd;
+    border: 1px solid #a7d4c0;
+    margin: 10px 0;
+}
+
+.response.advice {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+
+.response.empty {
+    height: 1px;
+    border-color: transparent;
+    background: transparent;
+}
+
+.accent-message {
+    font-size: 10px;
+    color: #555;
+}
+
+@media (min-width: 576px) {
+    .box {
+      width: 540px;
+      height: 270px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .box {
+        width: 720px;
+        height: 360px;
+    }
+}
